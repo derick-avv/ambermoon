@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+
+/* --- Reset / Base --- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: "Bodoni Moda", serif;
+  font-optical-sizing: auto;
+  line-height: 1.6;
+  min-height: 100%;
+  background: var(--bg-shellstone);
+  /* background: url(../images/IMG_5385.JPG);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: fixed; */
+  margin: 0;
+  padding: 0;
+  color: var(--bg-royal-blue);
+  height: 100vh;
+  overflow-x: hidden;
+
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+/* admin styles */
+.dash-header {
+  background: var(--bg-sapphire);
+  color: var(--bg-swan-wing);
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+.dash-header h1 {
+  font-size: 1rem;
+}
+
+.admin-grid-container {
+  display: grid; 
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.admin-sidebar {
+  grid-column: 1;
+}
+
+.admin-sidebar ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-sidebar ul li {
+  padding: 1rem ;
+  border-bottom: solid 1px var(--bg-beige);
+}

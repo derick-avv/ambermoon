@@ -1,0 +1,25 @@
+.admin-grid-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.admin-grid-container table {
+
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.admin-grid-container th,
+.admin-grid-container td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.admin-grid-container th {
+  background-color: #f4f4f4;
+}
+
+.admin-grid-container img {
+  border-radius: 6px;
+}
