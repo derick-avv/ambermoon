@@ -28,3 +28,55 @@ A fully responsive, client-side portfolio website built with PHP, HTML, CSS, and
 - **HTML5 & CSS3** – Markup and styling.  
 - **JavaScript** – Client-side interactions.  
 - **MySQL** – Database for storing portfolio posts and admin credentials.  
+
+## Project Structure
+
+```bash
+ambermoon/
+├─ assets/
+│   ├─ css/
+│   │   ├─ pages/
+│   │   │   ├─ about.css
+│   │   │   ├─ admin_dashboard.css
+│   │   │   ├─ admin_login.css
+│   │   │   ├─ admin_manage_posts.css
+│   │   │   ├─ contact.css
+│   │   │   ├─ home.css
+│   │   │   └─ portfolio.css
+│   │   ├─ navbar.css
+│   │   ├─ root.css
+│   │   ├─ style.css
+│   │   └─ typography.css
+│   ├─ images/        # Static Images
+│   └─ js/
+│       ├─ home.js
+│       ├─ main.js
+│       ├─ navbar.js
+│       └─ portfolio.js
+├─ components/
+│   ├─ admin_header.php
+│   ├─ admin_sidebar.php
+│   ├─ footer.php
+│   ├─ header.php
+│   └─ navbar.php
+├─ includes/
+│   └─ config.php
+├─ pages/
+│   ├─ 404.php
+│   ├─ about.php
+│   ├─ admin_create_post.php
+│   ├─ admin_dashboard.php
+│   ├─ admin_edit_post.php
+│   ├─ admin_login.php
+│   ├─ admin_manage_posts.php
+│   ├─ contact.php
+│   ├─ fetch_posts.php
+│   ├─ home.php
+│   ├─ logout.php
+│   └─ portfolio.php
+├─ uploads/           # Uploaded files
+├─ .gitignore
+├─ .htaccess
+├─ index.php          # Front controller
+└─ README.md          # Project documentation
+```
