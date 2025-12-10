@@ -8,8 +8,7 @@ A fully responsive, client-side portfolio website built with PHP, HTML, CSS, and
 - [Technologies](#technologies)  
 - [Project Structure](#project-structure)  
 - [Installation](#installation)  
-- [Usage](#usage)  
-- [Admin Dashboard](#admin-dashboard)  
+- [Access](#access)   
 - [License](#license)  
 
 ## Features
@@ -80,3 +79,68 @@ ambermoon/
 ├─ index.php          # Front controller
 └─ README.md          # Project documentation
 ```
+
+## Installation
+Follow these steps to run the Amber Moon Portfolio project locally:
+
+1. **Clone the repository:**
+```bash
+git clone https://github.com/derick-avv/ambermoon.git
+```
+
+2. **Navigate into the project folder:**
+```bash
+cd ambermoon
+```
+
+3. **Set up your local server:**
+- Make sure you have a local PHP environment installed (XAMPP, WAMP, or MAMP).
+- Place the project folder inside your local server's root directory:
+  - XAMPP → `htdocs/`
+  - WAMP → `www/`
+  - MAMP → `htdocs/`
+
+4. **Import the database:**
+
+- Open `phpMyAdmin` in your browser.
+
+- Create a new database, e.g., `ambermoon_db`.
+
+- Import the provided `database.sql` file containing the tables for the project.
+
+5. **Configure database connection:**
+
+- Open `includes/config.php`.
+
+- Update the database credentials to match your local setup:
+
+```php
+if (!defined('DB_HOST')) define('DB_HOST', 'localhost');
+if (!defined('DB_USER')) define('DB_USER', 'root');
+if (!defined('DB_PASS')) define('DB_PASS', '');
+if (!defined('DB_NAME')) define('DB_NAME', 'ambermoon');
+```
+6. **Start your local server**
+- Ensure Apache and MySQL are running.
+- Open your browser and navigate to:
+```bash
+http://localhost/ambermoon
+```
+
+## Access 
+- **Public Portfolio:** http://localhost/ambermoon
+- **Admin Dashboard:** http://localhost/ambermoon/admin_dashboard
+
+**Default Credentials:**
+- Username: `admin`
+- Password: `admin123`
+
+⚠️ **IMPORTANT!** Change these credentials in production.
+
+## License
+
+This project is open-source and available under the [MIT License](https://opensource.org/licenses/MIT).  
+
+You are free to use, modify, and distribute this project for personal or commercial purposes, as long as you include the original copyright and license notice.  
+
+For more details, see the [LICENSE](LICENSE) file included in this repository.
