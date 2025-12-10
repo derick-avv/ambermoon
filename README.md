@@ -76,6 +76,7 @@ ambermoon/
 ├─ uploads/           # Uploaded files
 ├─ .gitignore
 ├─ .htaccess
+├─ database.sql
 ├─ index.php          # Front controller
 └─ README.md          # Project documentation
 ```
