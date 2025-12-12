@@ -9,6 +9,7 @@ A fully responsive, client-side portfolio website built with PHP, HTML, CSS, and
 - [Project Structure](#project-structure)  
 - [Installation](#installation)  
 - [Access](#access)   
+- [Future Updates](#future-updates)
 - [License](#license)  
 
 ## Features
@@ -138,7 +139,7 @@ http://localhost/ambermoon
 
 ⚠️ **IMPORTANT!** Change these credentials in production.
 
-## Future Features
+## Future Updates
 
 Planned enhancements and upcoming additions to improve the Amber Moon Portfolio website:
 
