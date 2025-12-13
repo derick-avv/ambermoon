@@ -10,7 +10,7 @@
 - [Layout & Component Rendering](#layout-&-component-rendering)     
 
 
-## 1. Project Overview
+## Project Overview
 
 This project is a custom-built PHP web application developed without frameworks, designed to demonstrate backend fundamentals, scalable structure, and real-world admin functionality.
 
@@ -22,7 +22,7 @@ The application includes:
 - Centeralized request handling using a front controller
 
 
-## 2. Front Controller Architecture
+## Front Controller Architecture
 
 All requests are routed through a single entry point:
 `index.php`
@@ -41,7 +41,7 @@ This file acts as the **Front Controller**, ensuring:
 5. Shared UI components are rendered
 
 
-## 3. Routing System (Query-Based Routing)
+## Routing System (Query-Based Routing)
 
 Routing is handled using a query-string based system:
 ```php
@@ -61,7 +61,7 @@ This approach:
 This routing method is intentionally framework-free and mirrors the core behavior of modern PHP frameworks at a foundational level.
 
 
-## 4. Clean URL Support 
+## Clean URL Support 
 
 The application supports clean URLs using Apache rewrite rules:
 ```apache
@@ -78,7 +78,7 @@ This allows URLs such as:
 Without modifying application logic.
 
 
-## 5. Layout & Component Rendering
+## Layout & Component Rendering
 The UI layout is composed using reusable components:
 ```text
 components/
@@ -93,7 +93,7 @@ These components are included globally by the front controller, ensuring:
 - Easy global UI updates
 
 
-## 6. Dynamic Asset Loading (CSS & JavaScript)
+## Dynamic Asset Loading (CSS & JavaScript)
 
 The application uses a **dynamic, page-aware asset loading system** implemented within shared layout components (`header.php` and `footer.php`). This approach ensures that only the required CSS and JavaScript files are loaded per page, improving performance and maintainability.
 
