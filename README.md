@@ -1,6 +1,21 @@
 # Amber Moon Portfolio - Full-Stack Portfolio with Admin Dashboard
 
-A fully responsive, client-side portfolio website built with PHP, HTML, CSS, and JavaScript. The project features a scalable architecture with a single front controller, an admin dashboard, and full CRUD functionality for portfolio posts.  
+This project is a fully custom, framework-free PHP web application built to demonstrate real-world backend fundamentals, scalable architecture, and production-minded development practices.
+
+The application uses a Front Controller architecture to centrally handle routing, layout rendering, asset loading, and request processing. It features a complete admin dashboard with authentication, session management, and CRUD systems that allow non-technical users to manage site content without modifying code.
+
+Rather than relying on frameworks, the project intentionally implements core concepts manually, including routing logic, dynamic asset loading, access control, and page-level request handling. This approach highlights a strong understanding of how modern PHP frameworks operate under the hood, while maintaining full control over performance, structure, and extensibility.
+
+The codebase is organized for clarity and scalability, with reusable layout components, page-aware CSS and JavaScript loading, cache-busting for static assets, and clean separation between public pages and protected admin functionality.
+
+This project is well-suited as a foundation for:
+
+- Content-driven websites
+- Portfolio and personal brand platforms
+- Admin-managed marketing sites
+- Future migration to MVC or framework-based architectures
+
+For a detailed breakdown of the system architecture, routing strategy, asset loading, and security considerations, see [ARCHITECTURE.md](#architecture.md)
 
 ## Table of Contents
 
