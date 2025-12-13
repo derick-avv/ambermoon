@@ -15,7 +15,7 @@ This project is well-suited as a foundation for:
 - Admin-managed marketing sites
 - Future migration to MVC or framework-based architectures
 
-For a detailed breakdown of the system architecture, routing strategy, asset loading, and security considerations, see [ARCHITECTURE.md](#architecture.md)
+For a detailed breakdown of the system architecture, routing strategy, asset loading, and security considerations, see [ARCHITECTURE.md](ARCHITECTURE.md)
 
 ## Table of Contents
 
