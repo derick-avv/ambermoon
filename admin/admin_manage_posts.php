@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['admin_logged_in'])) {
-    header('Location: index.php?page=admin_login');
+    header('Location: /ambermoon/admin/admin_login.php');
     exit;
 }
 // Handle delete action
@@ -18,13 +18,13 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 <?php
-include "components/admin_header.php";
+include "../components/admin_header.php";
 ?>
 
 <div class="admin-grid-container">
   <?php 
   // Admin Sidebar
-    include "components/admin_sidebar.php"
+    include "../components/admin_sidebar.php"
   ?>
 
   <h2>Manage Posts</h2>

@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['admin_logged_in'])) {
-    header('Location: index.php?page=admin_login');
+    header('Location: /ambermoon/admin/admin_login.php');
     exit;
 }
 
@@ -45,13 +45,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 ?>
 
 <?php
-include "components/admin_header.php";
+include "../components/admin_header.php";
 ?>
 
 <div class="admin-grid-container">
     <!-- ///===== SIDEBAR INCLUDE =====\\\ -->
     <?php
-        include "components/admin_sidebar.php"
+        include "../components/admin_sidebar.php"
     ?>
     <!-- ///===== END OF SIDEBAR INCLUDE =====\\\ -->
 

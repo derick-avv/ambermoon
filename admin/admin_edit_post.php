@@ -1,12 +1,12 @@
 <?php
 session_start();
 if (!isset($_SESSION['admin_logged_in'])) {
-    header('Location: index.php?page=admin_login');
+    header('Location: /ambermoon/admin/admin_login.php');
     exit;
 }
 
 if (!isset($_GET['id'])) {
-    header('Location: index.php?page=admin_manage_posts');
+    header('Location: /ambermoon/admin/admin_manage_posts.php');
     exit;
 }
 
@@ -19,7 +19,7 @@ $stmt->execute(['id' => $postId]);
 $post = $stmt->fetch(PDO::FETCH_ASSOC);
 
 if (!$post) {
-    header('Location: index.php?page=admin_manage_posts');
+    header('Location: /ambermoon/admin/admin_manage_posts.php');
     exit;
 }
 
@@ -60,12 +60,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 ?>
 
 <?php
-include "components/admin_header.php";
+include "../components/admin_header.php";
 ?>
 
 <div class="admin-grid-container">
   <?php
-  include "components/admin_sidebar.php";
+  include "../components/admin_sidebar.php";
   ?>
 
   <h2>Edit Post</h2>

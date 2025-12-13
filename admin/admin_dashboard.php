@@ -1,19 +1,19 @@
 <?php
-require_once "includes/config.php";
+require_once "../includes/config.php";
 session_start();
 if (!isset($_SESSION['admin_logged_in'])) {
-    header('Location: index.php?page=admin_login');
+    header('Location: /ambermoon/admin/admin_login.php');
     exit;
 }
 ?>
 
 <?php
-include "components/admin_header.php";
+include "../components/admin_header.php";
 ?>
 
 <div class="admin-grid-container">
   <?php
-  include "components/admin_sidebar.php"
+  include "../components/admin_sidebar.php"
   ?>
 </div>
 
