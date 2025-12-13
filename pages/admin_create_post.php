@@ -4,6 +4,7 @@ if (!isset($_SESSION['admin_logged_in'])) {
     header('Location: index.php?page=admin_login');
     exit;
 }
+
 $message = '';
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $title = trim($_POST['title']);
