@@ -1,13 +1,17 @@
 # Technical Documentation - Architecture & Implementation
 
 
-## Table of Contents
+### Table of Contents
 
 - [Project Overview](#project-overview)  
 - [Front Controller Architecture](#front-controller-architecture)  
 - [Routing System (Query-Based Routing)](#Routing-System-(Query-Based-Routing))  
 - [Clean URL Support](#clean-url-support)  
-- [Layout & Component Rendering](#layout-&-component-rendering)     
+- [Layout & Component Rendering](#layout-&-component-rendering)   
+- [Request Handling (POST Logic)](#request-handling-(POST-Logic))
+- [CRUD Systems](#crud-systems)
+- [Authentication & Sessions](#authentication-&-sessions)
+
 
 
 ## Project Overview
@@ -161,3 +165,61 @@ This asset-loading approach provides:
 - Framework-like behavior implemented in vanilla PHP
 
 The system mirrors asset pipelines used in modern frameworks while remaining lightweight and fully customizable.
+
+## Request Handling (POST Logic)
+Form submission are handled using HTTP method checks:
+```php
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // sanitize input
+    // process data
+    // persist to database
+}
+```
+This logic:
+- Separates display logic from data processing
+- Enables secure form handling
+- Supports CRUD operations
+
+## CRUD Systems
+The admin dashboard provides full CRUD functionality for:
+- Portfolio posts
+- Blog posts ***(Future Update)***
+
+Each system supports:
+- Create
+- Read
+- Update
+- Delete
+- Image uploads
+- Metadata fields (title, caption, credits, category)
+
+## Authentication & Sessions
+Authentication is handled using PHP session:
+- Secure admin logic
+- Session-based access control
+- Logout functionality
+- Protected admin routes
+
+Unauthorized access attempts are redirected or blocked.
+
+## Security Measures
+The project includes several baseline security practices:
+- Input sanitization
+- Directory traversal prevention
+- Session validation
+- Controlled file inclusion
+- Server-side validation for forms
+
+## Design Philosophy
+
+This project was intentionally built:
+- Without frameworks
+- With scalability in mind
+- To demonstrate backend fundamental
+- To mirror real-world PHP patterns
+
+The architecture can easily be extended into:
+- MVC separation
+- REST-style routing
+- Framework migration (Laravel, Symfony)
+- API-driven frontend

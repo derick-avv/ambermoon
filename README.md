@@ -9,6 +9,7 @@ A fully responsive, client-side portfolio website built with PHP, HTML, CSS, and
 - [Project Structure](#project-structure)  
 - [Installation](#installation)  
 - [Access](#access)   
+- [Technical Documentation](#technical-documentation)
 - [Future Updates](#future-updates)
 - [License](#license)  
 
@@ -138,6 +139,9 @@ http://localhost/ambermoon
 - Password: `admin123`
 
 ⚠️ **IMPORTANT!** Change these credentials in production.
+
+## Technical Documentation
+For a detailed breakdown of the project architecture, routing system, and backend implementation, see [ARCHITECTURE.md](ARCHITECTURE.md).
 
 ## Future Updates
 
