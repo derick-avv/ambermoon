@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($user && password_verify($password, $user['password'])) {
         $_SESSION['admin_logged_in'] = true;
         $_SESSION['admin_id'] = $user['id'];
-        header('Location: index.php?page=admin_dashboard');
+        header('Location: /ambermoon/admin/admin_dashboard.php');
         exit;
     } else {
         $error = 'Invalid username or password';
