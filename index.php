@@ -5,7 +5,7 @@
 include 'includes/config.php';
 
 // Determine requested page from URL parameter, default to 'home'
-$page = $_GET['page'] ?? 'home';
+$page = $_GET['page'] ?? 'home';    #Routing mechanism
 
 // Get the page title, pass current page to header
 $pageTitle = ucfirst($page) . " - My Site";
@@ -21,8 +21,9 @@ include 'components/header.php';
 include 'components/navbar.php';
 
 // Route to the requested page - PAGE DISPLAY
-$page_file = "pages/$page.php";
-if (file_exists($page_file)) {
+$page_file = "pages/$page.php"; #Route resolver
+
+if (file_exists($page_file)) {  #Route guard
     include $page_file;
 } else {
     include 'pages/404.php';

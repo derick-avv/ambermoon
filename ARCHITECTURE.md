@@ -1,7 +1,7 @@
 # Technical Documentation - Architecture & Implementation
 
 
-### Table of Contents
+## Table of Contents
 
 - [Project Overview](#project-overview)  
 - [Front Controller Architecture](#front-controller-architecture)  
