@@ -1,7 +1,10 @@
 <?php
 require_once "../includes/config.php";
+$pageTitle = "Dashboard";
+$adminPage = "admin_dashboard";
 
-session_start();
+include BASE_PATH . "/components/admin/header.php";
+
 
 if (!isset($_SESSION['admin_logged_in'])) {
     header('Location: /ambermoon/admin/admin_login.php');
@@ -10,15 +13,16 @@ if (!isset($_SESSION['admin_logged_in'])) {
 ?>
 
 <?php
-include "../components/admin_header.php";
+include "../components/admin/admin_header.php";
 ?>
 
 <div class="admin-grid-container">
   <?php
-  include "../components/admin_sidebar.php"
+  include "../components/admin/admin_sidebar.php"
   ?>
 </div>
 
 <p>You are logged in successfully.</p>
 
+<?php include BASE_PATH . "/components/admin/footer.php"; ?>
 

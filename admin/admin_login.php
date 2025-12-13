@@ -1,7 +1,9 @@
 <?php
 require_once '../includes/config.php';
+$pageTitle = "Admin Login";
+$adminPage = "admin_login";
 
-session_start();
+include BASE_PATH . "/components/admin/header_auth.php";
 
 $pageTitle = "Admin Login - My Site";
 
@@ -42,3 +44,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     
 </main>
 
+<?php include BASE_PATH . "/components/admin/footer.php"; ?>

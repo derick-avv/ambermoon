@@ -1,5 +1,8 @@
 <?php
 require_once "../includes/config.php";
+$pageTitle = "Edit Post";
+$adminPage = "admin_edit_post";
+include BASE_PATH . "/components/admin/header.php";
 
 session_start();
 
@@ -64,12 +67,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 ?>
 
 <?php
-include "../components/admin_header.php";
+include "../components/admin/admin_header.php";
 ?>
 
 <div class="admin-grid-container">
   <?php
-  include "../components/admin_sidebar.php";
+  include "../components/admin/admin_sidebar.php";
   ?>
 
   <h2>Edit Post</h2>
@@ -103,3 +106,5 @@ include "../components/admin_header.php";
     <button type="submit">Update Post</button>
   </form>
 </div>
+
+<?php include BASE_PATH . "/components/admin/footer.php"; ?>

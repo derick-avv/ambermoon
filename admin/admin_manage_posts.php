@@ -1,7 +1,8 @@
 <?php
 require_once "../includes/config.php";
-
-session_start();
+$pageTitle = "Posts";
+$adminPage = "admin_manage_posts";
+include BASE_PATH . "/components/admin/header.php";
 
 if (!isset($_SESSION['admin_logged_in'])) {
 
@@ -22,13 +23,13 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 <?php
-include "../components/admin_header.php";
+include "../components/admin/admin_header.php";
 ?>
 
 <div class="admin-grid-container">
   <?php 
   // Admin Sidebar
-    include "../components/admin_sidebar.php"
+    include "../components/admin/admin_sidebar.php"
   ?>
 
   <h2>Manage Posts</h2>
@@ -75,3 +76,5 @@ include "../components/admin_header.php";
     </tbody>
   </table>
 </div>
+
+<?php include BASE_PATH . "/components/admin/footer.php"; ?>

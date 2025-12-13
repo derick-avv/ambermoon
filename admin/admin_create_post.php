@@ -1,7 +1,8 @@
 <?php
 require_once "../includes/config.php";
-
-session_start();
+$pageTitle = "Create Post";
+$adminPage = "admin_create_post";
+include BASE_PATH . "/components/admin/header.php";
 
 if (!isset($_SESSION['admin_logged_in'])) {
     header('Location: /ambermoon/admin/admin_login.php');
@@ -48,13 +49,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 ?>
 
 <?php
-include "../components/admin_header.php";
+include "../components/admin/admin_header.php";
 ?>
 
 <div class="admin-grid-container">
     <!-- ///===== SIDEBAR INCLUDE =====\\\ -->
     <?php
-        include "../components/admin_sidebar.php"
+        include "../components/admin/admin_sidebar.php"
     ?>
     <!-- ///===== END OF SIDEBAR INCLUDE =====\\\ -->
 
@@ -90,3 +91,4 @@ include "../components/admin_header.php";
     </form>
 </div>
 
+<?php include BASE_PATH . "/components/admin/footer.php"; ?>
