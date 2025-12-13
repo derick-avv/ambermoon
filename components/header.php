@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo isset($pageTitle) ? $pageTitle : 'My Site'; ?></title>
+    <!-- Title change -->
+    <title><?php echo isset($pageTitle) ? $pageTitle : 'My Site'; ?></title> 
 
   <!-- main styles -->
   <link rel="stylesheet" href="/ambermoon/assets/css/style.css?v=<?php echo filemtime('assets/css/style.css'); ?>">
 
-  <!-- root avriables -->
+  <!-- root variables -->
   <link rel="stylesheet" href="/ambermoon/assets/css/root.css?v=<?php echo filemtime('assets/css/root.css'); ?>">
 
   <!-- navbar styles -->
@@ -28,6 +29,7 @@
         echo "<link rel='stylesheet' href='{$pageCssFile}'>";
     }
     ?>
+    <!-- End of Page-specific CSS -->
 
     <!-- Optional: JS libraries in head -->
     <script src="assets/js/jquery.min.js"></script>

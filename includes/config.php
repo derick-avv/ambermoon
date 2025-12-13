@@ -2,10 +2,10 @@
 // CONFIG.PHP - DATABASE CONFIGURATION
 
 // Database credentials
-if (!defined('DB_HOST')) define('DB_HOST', 'localhost');
-if (!defined('DB_USER')) define('DB_USER', 'root');
-if (!defined('DB_PASS')) define('DB_PASS', '');
-if (!defined('DB_NAME')) define('DB_NAME', 'ambermoon');
+if (!defined('DB_HOST')) define('DB_HOST', 'localhost'); #-----HOST
+if (!defined('DB_USER')) define('DB_USER', 'root'); #-----USER
+if (!defined('DB_PASS')) define('DB_PASS', ''); #-----PASSWORD
+if (!defined('DB_NAME')) define('DB_NAME', 'ambermoon'); #-----DATABASE NAME
 
 // Create database connection
 try {

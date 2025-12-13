@@ -11,6 +11,8 @@
 - [Request Handling (POST Logic)](#request-handling-(POST-Logic))
 - [CRUD Systems](#crud-systems)
 - [Authentication & Sessions](#authentication-&-sessions)
+- [Security Measures](#security-measures)
+- [Design Philosophy](#design-philosophy)
 
 
 
