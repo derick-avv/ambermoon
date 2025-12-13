@@ -1,6 +1,7 @@
 <?php
-session_start();
 require_once '../includes/config.php';
+
+session_start();
 
 $pageTitle = "Admin Login - My Site";
 

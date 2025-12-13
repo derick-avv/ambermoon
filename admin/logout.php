@@ -9,5 +9,5 @@ session_unset();
 session_destroy();
 
 // Redirect to the admin login page through the controller
-header('Location: index.php?page=admin_login');
+header('Location: /ambermoon/admin/admin_login.php');
 exit;

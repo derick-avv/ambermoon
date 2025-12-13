@@ -1,8 +1,10 @@
 <?php
 // Make sure the session is active (auth)
 if (!isset($_SESSION)) session_start();
+
 if (!isset($_SESSION['admin_logged_in'])) {
-    header('Location: index.php?page=admin_login');
+    
+    header('Location: /ambermoon/admin/admin_login.php');
     exit;
 }
 
@@ -19,7 +21,7 @@ $sidebarItems = [
     <ul>
         <?php foreach ($sidebarItems as $title => $page): ?>
             <li>
-                <a href="index.php?page=<?= $page ?>" 
+                <a href="/ambermoon/admin/<?= $page ?>.php" 
                    class="<?= ($_GET['page'] ?? 'admin_dashboard') === $page ? 'active' : '' ?>">
                     <?= $title ?>
                 </a>

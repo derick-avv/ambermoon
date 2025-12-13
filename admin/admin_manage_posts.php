@@ -1,6 +1,10 @@
 <?php
+require_once "../includes/config.php";
+
 session_start();
+
 if (!isset($_SESSION['admin_logged_in'])) {
+
     header('Location: /ambermoon/admin/admin_login.php');
     exit;
 }
