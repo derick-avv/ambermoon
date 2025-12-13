@@ -8,25 +8,28 @@
     <title><?php echo isset($pageTitle) ? $pageTitle : 'My Site'; ?></title> 
 
   <!-- main styles -->
-  <link rel="stylesheet" href="/ambermoon/assets/css/style.css?v=<?php echo filemtime('assets/css/style.css'); ?>">
+  <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/style.css?v=<?= filemtime(BASE_PATH . '/assets/css/style.css') ?>">
 
   <!-- root variables -->
-  <link rel="stylesheet" href="/ambermoon/assets/css/root.css?v=<?php echo filemtime('assets/css/root.css'); ?>">
+  <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/root.css?v=<?= filemtime(BASE_PATH . '/assets/css/root.css') ?>">
 
   <!-- navbar styles -->
-  <link rel="stylesheet" href="/ambermoon/assets/css/navbar.css?v=<?php echo filemtime('assets/css/navbar.css'); ?>">
+  <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/navbar.css?v=<?= filemtime(BASE_PATH . '/assets/css/navbar.css') ?>">
 
    <!-- typography styles -->
-  <link rel="stylesheet" href="/ambermoon/assets/css/typography.css?v=<?php echo filemtime('assets/css/typography.css'); ?>">
+  <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/typography.css?v=<?= filemtime(BASE_PATH . '/assets/css/typography.css') ?>">
+
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-   <!-- Page-specific CSS -->
+    <!-- Page-specific CSS (client-side only) -->
     <?php
-    $pageCssFile = "assets/css/pages/{$page}.css";
-    if (file_exists($pageCssFile)) {
-        echo "<link rel='stylesheet' href='{$pageCssFile}'>";
+    if (isset($page)) {
+        $pageCssFile = BASE_PATH . "/assets/css/pages/{$page}.css";
+        if (file_exists($pageCssFile)) {
+            echo "<link rel='stylesheet' href='" . BASE_URL . "/assets/css/pages/{$page}.css'>";
+        }
     }
     ?>
     <!-- End of Page-specific CSS -->

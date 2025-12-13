@@ -14,3 +14,7 @@ try {
 } catch(PDOException $e) {
     die("Database connection failed: " . $e->getMessage());
 }
+
+// Define global BASE_PATH + BASE_URL
+define('BASE_PATH', $_SERVER['DOCUMENT_ROOT'] . '/ambermoon');
+define('BASE_URL', '/ambermoon');
