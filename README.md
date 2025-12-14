@@ -171,22 +171,22 @@ For a detailed breakdown of the project architecture, routing system, and backen
 
 Planned enhancements and upcoming additions to improve the Amber Moon Portfolio website:
 
-- **Homepage Blog Section**
+- **Homepage Blog Section**:
   Add a dynamic blog preview on the homepage displaying the latest posts.
 
-- **Full Blog Page**
+- **Full Blog Page**:
   Introduce a dedicated blog page where visitors can browse all articles.
 
-- **Blog CRUD for Admin**
+- **Blog CRUD for Admin**:
   Expand the admin dashboard to include full Create, Read, Update, Delete function for blog posts.
 
-- **Likes & Comments System**
+- **Likes & Comments System**:
   Allow users to like and comment on blog posts, increasing engagement and interaction.
 
-- **User Authentication System**
+- **User Authentication System**:
   Implement a public user sign-up and login system (seperate from the admin login).
 
-- **Admin Front Controller**
+- **Admin Front Controller**:
   Refactor current admin files to flow through a single front controller for dynamic display.
 
 ## License
