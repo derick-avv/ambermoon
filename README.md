@@ -186,6 +186,9 @@ Planned enhancements and upcoming additions to improve the Amber Moon Portfolio 
 - **User Authentication System**
   Implement a public user sign-up and login system (seperate from the admin login).
 
+- **Admin Front Controller**
+  Refactor current admin files to flow through a single front controller for dynamic display.
+
 ## License
 
 This project is open-source and available under the [MIT License](https://opensource.org/licenses/MIT).  
