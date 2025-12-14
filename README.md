@@ -49,13 +49,25 @@ For a detailed breakdown of the system architecture, routing strategy, asset loa
 
 ```bash
 ambermoon/
+├─ admin/
+│   ├─ uploads/
+│   ├─ .htaccess
+│   ├─ admin_create_post.php
+│   ├─ admin_dashboard.php
+│   ├─ admin_edit_post.php
+│   ├─ admin_login.php
+│   ├─ admin_manage_posts.php
+│   ├─ index.php
+│   └─ logout.php
 ├─ assets/
 │   ├─ css/
+│   │   ├─ admin/
+│   │   │   ├─ admin_dashboard.php
+│   │   │   ├─ admin_login.php
+│   │   │   ├─ admin_manage_posts.php
+│   │   │   └─ admin_sidebar.php
 │   │   ├─ pages/
 │   │   │   ├─ about.css
-│   │   │   ├─ admin_dashboard.css
-│   │   │   ├─ admin_login.css
-│   │   │   ├─ admin_manage_posts.css
 │   │   │   ├─ contact.css
 │   │   │   ├─ home.css
 │   │   │   └─ portfolio.css
@@ -70,8 +82,12 @@ ambermoon/
 │       ├─ navbar.js
 │       └─ portfolio.js
 ├─ components/
-│   ├─ admin_header.php
-│   ├─ admin_sidebar.php
+│   ├─ admin/
+│   │   ├─ admin_header.php
+│   │   ├─ admin_sidebar.php
+│   │   ├─ footer.php
+│   │   ├─ header_auth.php
+│   │   └─ header.php
 │   ├─ footer.php
 │   ├─ header.php
 │   └─ navbar.php
@@ -80,19 +96,14 @@ ambermoon/
 ├─ pages/
 │   ├─ 404.php
 │   ├─ about.php
-│   ├─ admin_create_post.php
-│   ├─ admin_dashboard.php
-│   ├─ admin_edit_post.php
-│   ├─ admin_login.php
-│   ├─ admin_manage_posts.php
 │   ├─ contact.php
 │   ├─ fetch_posts.php
 │   ├─ home.php
-│   ├─ logout.php
 │   └─ portfolio.php
 ├─ uploads/           # Uploaded files
 ├─ .gitignore
 ├─ .htaccess
+├─ ARCHITECTURE.md    # Project documentation
 ├─ database.sql
 ├─ index.php          # Front controller
 └─ README.md          # Project documentation
