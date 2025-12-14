@@ -50,7 +50,6 @@ For a detailed breakdown of the system architecture, routing strategy, asset loa
 ```bash
 ambermoon/
 ├─ admin/
-│   ├─ uploads/
 │   ├─ .htaccess
 │   ├─ admin_create_post.php
 │   ├─ admin_dashboard.php
