@@ -156,7 +156,7 @@ http://localhost/ambermoon
 
 ## Access 
 - **Public Portfolio:** http://localhost/ambermoon
-- **Admin Dashboard:** http://localhost/ambermoon/admin_dashboard
+- **Admin Dashboard:** http://localhost/ambermoon/admin/dashboard
 
 **Default Credentials:**
 - Username: `admin`
