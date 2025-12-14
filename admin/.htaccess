@@ -1,0 +1,23 @@
+RewriteEngine On
+
+# Allow existing files/folders
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Login
+RewriteRule ^login/?$ admin_login.php [L]
+
+# Dashboard
+RewriteRule ^dashboard/?$ admin_dashboard.php [L]
+
+# Posts
+RewriteRule ^posts/edit/([0-9]+)/?$ admin_edit_post.php?id=$1 [L]
+RewriteRule ^posts/create/?$ admin_create_post.php [L]
+RewriteRule ^posts/?$ admin_manage_posts.php [L]
+
+# Delete post
+RewriteRule ^posts/delete/([0-9]+)/?$ admin_manage_posts.php?delete=$1 [L]
+
+# Logout
+RewriteRule ^logout/?$ logout.php [L]

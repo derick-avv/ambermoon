@@ -1,4 +1,6 @@
 <?php
+require_once '../includes/config.php';
+
 session_start();
 
 // Clear all session variables
@@ -9,5 +11,5 @@ session_unset();
 session_destroy();
 
 // Redirect to the admin login page through the controller
-header('Location: /ambermoon/admin/admin_login.php');
+header("Location: " . BASE_URL . "/admin/login");
 exit;

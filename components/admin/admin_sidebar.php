@@ -1,31 +1,27 @@
 <?php
-// Make sure the session is active (auth)
-if (!isset($_SESSION)) session_start();
+// Sidebar assumes auth is already handled by admin header
 
-if (!isset($_SESSION['admin_logged_in'])) {
-    
-    header('Location: /ambermoon/admin/admin_login.php');
-    exit;
-}
-
-// Define sidebar items (title => page)
 $sidebarItems = [
-    'Dashboard' => 'admin_dashboard',
-    'Create Post' => 'admin_create_post',
-    'Manage Posts' => 'admin_manage_posts',
-    'Logout' => 'logout'
+    'Dashboard'    => 'dashboard',
+    'Create Post'  => 'posts/create',
+    'Manage Posts' => 'posts',
 ];
 ?>
 
 <div class="admin-sidebar">
     <ul>
-        <?php foreach ($sidebarItems as $title => $page): ?>
+        <?php foreach ($sidebarItems as $title => $path): ?>
+            <?php
+                // Determine active state
+                $isActive = isset($adminPage) && str_starts_with($adminPage, basename($path));
+            ?>
             <li>
-                <a href="/ambermoon/admin/<?= $page ?>.php" 
-                   class="<?= ($_GET['page'] ?? 'admin_dashboard') === $page ? 'active' : '' ?>">
-                    <?= $title ?>
-                </a>
+                <a href="<?= BASE_URL ?>/admin/<?= $path ?>" class="<?= $adminPage === $path ? 'active' : '' ?>"> <?= $title ?> </a>
             </li>
         <?php endforeach; ?>
+
+        <li>
+            <a href="<?= BASE_URL ?>/admin/logout">Logout</a>
+        </li>
     </ul>
 </div>

@@ -1,19 +1,19 @@
 <?php
 require_once "../includes/config.php";
 $pageTitle = "Dashboard";
-$adminPage = "admin_dashboard";
+$adminPage = "dashboard";
 
 include BASE_PATH . "/components/admin/header.php";
 
 
 if (!isset($_SESSION['admin_logged_in'])) {
-    header('Location: /ambermoon/admin/admin_login.php');
+     header("Location: " . BASE_URL . "/admin/login");
     exit;
 }
 ?>
 
 <?php
-include "../components/admin/admin_header.php";
+include BASE_PATH . "/components/admin/header.php";
 ?>
 
 <div class="admin-grid-container">

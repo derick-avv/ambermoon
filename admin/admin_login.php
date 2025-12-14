@@ -1,7 +1,7 @@
 <?php
 require_once '../includes/config.php';
 $pageTitle = "Admin Login";
-$adminPage = "admin_login";
+$adminPage = "login";
 
 include BASE_PATH . "/components/admin/header_auth.php";
 
@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($user && password_verify($password, $user['password'])) {
         $_SESSION['admin_logged_in'] = true;
         $_SESSION['admin_id'] = $user['id'];
-        header('Location: /ambermoon/admin/admin_dashboard.php');
+        header("Location: " . BASE_URL . "/admin/dashboard");
         exit;
     } else {
         $error = 'Invalid username or password';
