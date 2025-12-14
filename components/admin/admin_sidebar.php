@@ -1,10 +1,13 @@
 <?php
 // Sidebar assumes auth is already handled by admin header
 
+// Add Sidebar items for pages added. 'Title' => 'Path'
 $sidebarItems = [
     'Dashboard'    => 'dashboard',
     'Create Post'  => 'posts/create',
-    'Manage Posts' => 'posts',
+    'Posts' => 'posts',
+    'Blog Posts' => 'blogs', // added on update
+    'Write' => 'blogs/create', // added on update
 ];
 ?>
 

@@ -1,10 +1,10 @@
 <?php
 require_once "../includes/config.php";
+
 $pageTitle = "Dashboard";
 $adminPage = "dashboard";
 
 include BASE_PATH . "/components/admin/header.php";
-
 
 if (!isset($_SESSION['admin_logged_in'])) {
      header("Location: " . BASE_URL . "/admin/login");

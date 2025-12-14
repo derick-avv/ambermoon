@@ -56,15 +56,14 @@ ambermoon/
 │   ├─ admin_edit_post.php
 │   ├─ admin_login.php
 │   ├─ admin_manage_posts.php
-│   ├─ index.php
 │   └─ logout.php
 ├─ assets/
 │   ├─ css/
 │   │   ├─ admin/
-│   │   │   ├─ admin_dashboard.php
-│   │   │   ├─ admin_login.php
-│   │   │   ├─ admin_manage_posts.php
-│   │   │   └─ admin_sidebar.php
+│   │   │   ├─ admin_dashboard.css
+│   │   │   ├─ admin_login.css
+│   │   │   ├─ admin_manage_posts.css
+│   │   │   └─ admin_sidebar.css
 │   │   ├─ pages/
 │   │   │   ├─ about.css
 │   │   │   ├─ contact.css

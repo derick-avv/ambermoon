@@ -1,12 +1,12 @@
 <?php
 require_once '../includes/config.php';
+
 $pageTitle = "Admin Login";
 $adminPage = "login";
 
 include BASE_PATH . "/components/admin/header_auth.php";
 
 $pageTitle = "Admin Login - My Site";
-
 $error = '';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {

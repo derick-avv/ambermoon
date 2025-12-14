@@ -4,7 +4,6 @@ session_start();
 
 // Auth check
 if (!isset($_SESSION['admin_logged_in'])) {
-
     header("Location: " . BASE_URL . "/admin/login");
     exit;
 }
